@@ -14,9 +14,9 @@ import { Button } from '@material-ui/core';
 
 function Sidebar(props) {
     return (
-        <div class="sidebar">
+        <div className="sidebar">
             {/* Twitter icon */}
-            <TwitterIcon />
+            <TwitterIcon className="sidebar__twitterIcon"/>
 
             <SidebarOption  active Icon = {HomeIcon} text="Home"/>
             <SidebarOption  Icon = {SearchIcon} text="Explore"/>
@@ -26,16 +26,7 @@ function Sidebar(props) {
             <SidebarOption  Icon = {ListAltIcon} text="Lists"/>
             <SidebarOption  Icon = {PersonOutlineIcon} text="Profile"/>
             <SidebarOption  Icon = {MoreHorizIcon} text="More"/>
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-
-            {/* Button-> Tweet */}
+            
             <Button variant="outlined" className="sidebar__tweet">Tweet</Button>
         </div>
     )
